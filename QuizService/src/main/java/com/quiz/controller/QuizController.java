@@ -11,9 +11,6 @@ import java.util.List;
 @RequestMapping("/quiz")
 public class QuizController {
 
-
-
-    
     @Autowired
     private QuizService quizService;
 
@@ -21,6 +18,7 @@ public class QuizController {
     public Quiz create(@RequestBody Quiz quiz){
         return quizService.add(quiz);
     }
+
 
     //get All
     @GetMapping
